@@ -31,9 +31,12 @@ while (userScore > 0 && wins < 3 ){
       wins++;
   } 
   
-  if (keepPlaying !== 'attack'){
+  if (keepPlaying !== 'attack' && keepPlaying !== 'quit'){
+    break;
+  } else if (keepPlaying === 'quit') {
     break;
   }
+
 
    if (grantScore > 0 && userScore<=0 && wins<3) {console.log ("Grant Wins");}
      }
